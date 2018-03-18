@@ -5,3 +5,20 @@ char character = (char)( Math.random() * 30 +65 );
 System.out.println("the little character is " + character);
 	}
 }
+import	java.util.*;
+public class compare_city{
+public static void main(String[] args){
+	String c;
+	System.out.println("please enter two city's name");
+		Scanner input = new Scanner(System.in); 
+		String name1 = input.nextLine();
+		String name2 = input.nextLine();
+		int  answer  =	name1.compareTo(name2);
+			if (answer>=0){
+				c  = name2;
+				name2 = name1;
+				name1 = c; 
+				}
+		System.out.println("按照字母顺序排列为" + name1 + name2  );
+		}
+}
