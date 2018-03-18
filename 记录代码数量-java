@@ -1,0 +1,7 @@
+import java.util.*;
+public class count{
+public static void main(String[] args){
+char character = (char)( Math.random() * 30 +65 );
+System.out.println("the little character is " + character);
+	}
+}
